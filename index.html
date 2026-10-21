@@ -146,7 +146,7 @@
     const lines = [
       'Hello! I would like to place an order.',
       '',
-      'Store: La Pino\\'z Pizza — Bistupur',
+      "Store: La Pino\'z Pizza — Bistupur",
       'Customer: ' + name,
       'Phone: ' + phone,
       'Address / pickup: ' + address,
@@ -160,7 +160,7 @@
       '',
       'Please confirm availability, final bill and delivery time.'
     ].filter(Boolean);
-    const url = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(lines.join('\\n'));
+    const url = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(lines.join('\n'));
     document.getElementById('status').textContent = 'Opening WhatsApp…';
     window.open(url, '_blank', 'noopener,noreferrer');
   });
