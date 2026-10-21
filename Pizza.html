@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#171717">
+<meta name="description" content="Explore La Pino'z Pizza in Bistupur, Jamshedpur. View menu, call the outlet, order online, or get directions.">
+<title>La Pino’z Pizza | Bistupur, Jamshedpur</title>
+<style>
+:root{--red:#e52b32;--dark:#171717;--cream:#fff8ed;--muted:#686868}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--dark);background:#fff}
+a{text-decoration:none;color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid #eee}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:74px}
+.brand{font-weight:950;font-size:22px;letter-spacing:-1px}.brand span{color:var(--red)}
+nav{display:flex;align-items:center;gap:25px;font-size:14px;font-weight:700}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;padding:13px 20px;font-weight:800;cursor:pointer;transition:.2s}
+.btn-red{background:var(--red);color:#fff}.btn-red:hover{background:#bd171e;transform:translateY(-1px)}
+.btn-dark{background:var(--dark);color:#fff}.btn-light{background:#fff;color:var(--dark);border:1px solid #ddd}
+.hero{background:radial-gradient(circle at 78% 45%,#fff0c8 0,#fff8ed 36%,#fff8ed 70%);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:25px;min-height:540px;padding:55px 0}
+.eyebrow{display:inline-block;background:#ffe2e1;color:#b71c23;padding:8px 12px;border-radius:999px;font-weight:850;font-size:12px;letter-spacing:.7px;text-transform:uppercase}
+h1{font-size:clamp(42px,6vw,72px);line-height:.98;letter-spacing:-3px;margin:20px 0}
+h1 em{color:var(--red);font-style:normal}.lead{color:#555;font-size:17px;line-height:1.7;max-width:510px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:27px 0}
+.hero-art{position:relative;min-height:350px;display:grid;place-items:center}
+.pizza{width:min(390px,82vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#f9d56b 0 52%,#d89b38 53% 58%,#bd6e26 59% 63%,#e8b74c 64% 70%,#a65b20 71% 75%,transparent 76%);box-shadow:0 25px 45px #9b5e2933;position:relative;transform:rotate(-12deg)}
+.pizza:before{content:"";position:absolute;inset:16%;border-radius:50%;background:radial-gradient(circle at 25% 30%,#d82f26 0 4%,transparent 4.5%),radial-gradient(circle at 67% 25%,#b8201d 0 4%,transparent 4.5%),radial-gradient(circle at 45% 60%,#c9221e 0 5%,transparent 5.5%),radial-gradient(circle at 75% 67%,#bd201c 0 4%,transparent 4.5%),radial-gradient(circle at 25% 75%,#b71c1c 0 4%,transparent 4.5%),radial-gradient(circle at 52% 35%,#478b39 0 3%,transparent 3.5%),radial-gradient(circle at 32% 48%,#478b39 0 3%,transparent 3.5%),radial-gradient(circle at 66% 48%,#478b39 0 3%,transparent 3.5%),radial-gradient(circle at 56% 78%,#478b39 0 3%,transparent 3.5%),radial-gradient(circle,#ffdf73 0 60%,#edb94c 61% 100%)}
+.floating{position:absolute;background:#fff;padding:14px 17px;border-radius:16px;box-shadow:0 10px 30px #00000012;font-weight:850}.float-one{top:30px;right:0}.float-two{bottom:25px;left:0}.float-one small,.float-two small{display:block;color:var(--muted);font-weight:600;margin-top:3px}
+.info-strip{background:var(--dark);color:#fff}.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:23px 0}.info-item{display:flex;align-items:center;gap:12px}.info-icon{font-size:24px}.info-item strong{display:block;font-size:14px}.info-item span{display:block;color:#ccc;font-size:12px;margin-top:4px}
+section{padding:76px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 35px}.section-head h2{font-size:clamp(30px,4vw,44px);letter-spacing:-1.5px;margin:12px 0}.section-head p{color:var(--muted);line-height:1.65}
+.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.menu-card{border:1px solid #eee;border-radius:22px;padding:22px;background:#fff;transition:.2s}.menu-card:hover{transform:translateY(-4px);box-shadow:0 15px 35px #0000000d}
+.food-icon{height:145px;border-radius:16px;background:linear-gradient(135deg,#fff0d1,#ffe2d8);display:grid;place-items:center;font-size:76px;margin-bottom:18px}
+.menu-card h3{margin:0 0 8px;font-size:20px}.menu-card p{color:var(--muted);font-size:14px;line-height:1.6;min-height:44px}.menu-card a{color:var(--red);font-weight:850;font-size:14px}
+.order-banner{background:var(--red);color:white;border-radius:28px;padding:38px;display:flex;align-items:center;justify-content:space-between;gap:25px}.order-banner h2{font-size:clamp(28px,4vw,42px);margin:0 0 10px;letter-spacing:-1px}.order-banner p{margin:0;color:#ffe4e4;line-height:1.6}.order-banner .btn{white-space:nowrap}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:stretch}.visit-card{background:var(--cream);padding:30px;border-radius:24px}.visit-card h3{font-size:25px;margin:0 0 20px}.detail{display:flex;gap:13px;margin:18px 0;line-height:1.55}.detail b{display:block}.detail span{color:#555;font-size:14px}.mapbox{border-radius:24px;overflow:hidden;min-height:350px;background:#eee}.mapbox iframe{width:100%;height:100%;min-height:350px;border:0}
+footer{background:#171717;color:#fff;padding:28px 0}.foot{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}.foot p{color:#aaa;font-size:12px;margin:6px 0}
+.disclaimer{font-size:11px;color:#aaa;margin-top:12px}
+@media(max-width:760px){nav a:not(.btn){display:none}.hero-grid{grid-template-columns:1fr;padding:50px 0 35px;text-align:center}.lead{margin:auto}.actions{justify-content:center}.hero-art{min-height:300px}.pizza{width:290px}.float-one{right:2%}.float-two{left:2%}.info-grid{grid-template-columns:1fr;gap:18px}.menu-grid{grid-template-columns:1fr}.food-icon{height:125px}.order-banner{padding:28px;display:block;text-align:center}.order-banner .btn{margin-top:22px}.visit-grid{grid-template-columns:1fr}section{padding:55px 0}h1{letter-spacing:-2px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">La Pino’z <span>Pizza.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#menu">Menu</a><a href="#visit">Find Us</a>
+      <a class="btn btn-red" href="https://lapinozpizza.in/order/bistupur-jamshedpur" target="_blank" rel="noopener">Order Online ↗</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Pizza time, Bistupur!</span>
+      <h1>Good times.<br><em>Great pizza.</em></h1>
+      <p class="lead">Craving a cheesy pizza, a quick bite, or a meal with friends? Explore the La Pino’z Pizza outlet in Bistupur, Jamshedpur.</p>
+      <div class="actions">
+        <a class="btn btn-red" href="https://lapinozpizza.in/order/bistupur-jamshedpur" target="_blank" rel="noopener">Explore Menu ↗</a>
+        <a class="btn btn-light" href="https://maps.app.goo.gl/VjFqcSnARCkkDoJu9?g_st=ac" target="_blank" rel="noopener">Get Directions ↗</a>
+      </div>
+      <p style="font-size:12px;color:#777">Delivery · Pickup · Dine-in · In-car ordering</p>
+    </div>
+    <div class="hero-art" aria-label="Illustration of a pizza">
+      <div class="pizza"></div>
+      <div class="floating float-one">🍕 Pizza mood?<small>Your next bite awaits</small></div>
+      <div class="floating float-two">🧀 Extra cheesy<small>Made for sharing</small></div>
+    </div>
+  </div>
+</section>
+<div class="info-strip">
+  <div class="wrap info-grid">
+    <div class="info-item"><div class="info-icon">📍</div><div><strong>Bistupur, Jamshedpur</strong><span>Kharkai Link Road</span></div></div>
+    <div class="info-item"><div class="info-icon">🕥</div><div><strong>Outlet hours</strong><span>Listed hours: 10:30 AM – 10:30 PM*</span></div></div>
+    <div class="info-item"><div class="info-icon">📞</div><div><strong>Call the outlet</strong><span>+91 91991 91555</span></div></div>
+  </div>
+</div>
+<section id="menu">
+  <div class="wrap">
+    <div class="section-head"><span class="eyebrow">Something for every craving</span><h2>Find your pizza mood</h2><p>Browse the current outlet menu and availability on the official ordering page. Items, prices, and offers may change.</p></div>
+    <div class="menu-grid">
+      <article class="menu-card"><div class="food-icon">🍕</div><h3>Classic & Signature Pizzas</h3><p>From simple cheesy favourites to loaded combinations.</p><a href="https://lapinozpizza.in/order/bistupur-jamshedpur" target="_blank" rel="noopener">Browse pizzas ↗</a></article>
+      <article class="menu-card"><div class="food-icon">🧄</div><h3>Garlic Bread & Sides</h3><p>Add a tasty side to complete your pizza meal.</p><a href="https://lapinozpizza.in/order/bistupur-jamshedpur" target="_blank" rel="noopener">Explore sides ↗</a></article>
+      <article class="menu-card"><div class="food-icon">🥤</div><h3>Combos & Drinks</h3><p>Check the latest combos, beverages, and available deals.</p><a href="https://lapinozpizza.in/order/bistupur-jamshedpur" target="_blank" rel="noopener">See current offers ↗</a></article>
+    </div>
+  </div>
+</section>
+<section style="background:#fff8ed;padding-top:50px;padding-bottom:50px">
+  <div class="wrap order-banner"><div><h2>Your pizza plan starts here.</h2><p>Check the live menu, choose your favourites, and continue to the outlet’s ordering page.</p></div><a class="btn btn-dark" href="https://lapinozpizza.in/order/bistupur-jamshedpur" target="_blank" rel="noopener">Order from official site ↗</a></div>
+</section>
+<section id="visit">
+  <div class="wrap">
+    <div class="section-head"><span class="eyebrow">Come say hello</span><h2>Visit our Bistupur outlet</h2><p>Use the map or call ahead to confirm today's timings and availability.</p></div>
+    <div class="visit-grid">
+      <div class="visit-card">
+        <h3>Outlet details</h3>
+        <div class="detail"><span>📍</span><div><b>Address</b><span>Ground Floor, 29, Kharkai Link Road, Ram Das Bhatta, Bistupur, Jamshedpur, Jharkhand 831001</span></div></div>
+        <div class="detail"><span>📞</span><div><b>Phone</b><span><a href="tel:+919199191555">+91 91991 91555</a></span></div></div>
+        <div class="detail"><span>🕥</span><div><b>Listed opening hours</b><span>Daily, approximately 10:30 AM – 10:30 PM. Please confirm before visiting.</span></div></div>
+        <div class="actions"><a class="btn btn-red" href="tel:+919199191555">Call Now</a><a class="btn btn-dark" href="https://maps.app.goo.gl/VjFqcSnARCkkDoJu9?g_st=ac" target="_blank" rel="noopener">Open in Maps</a></div>
+      </div>
+      <div class="mapbox"><iframe title="Map showing La Pino’z Pizza Bistupur" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=La%20Pino%27z%20Pizza%20Bistupur%20Jamshedpur&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap foot"><div><a class="brand" href="#home" style="color:#fff">La Pino’z <span>Pizza.</span></a><p>Bistupur, Jamshedpur, Jharkhand</p></div><div><a href="https://lapinozpizza.in/store-locator/jamshedpur/bistupur-jamshedpur" target="_blank" rel="noopener">Official outlet details ↗</a><p class="disclaimer">Independent landing-page concept; not an official La Pino’z Pizza website. Brand names belong to their respective owners.</p></div></div></footer>
+</body>
+</html>
